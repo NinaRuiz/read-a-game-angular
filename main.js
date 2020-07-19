@@ -17,6 +17,8 @@ function createWindow () {
   // and load the index.html of the app.
   win.loadFile('dist/electrong/index.html')
 
+  win.removeMenu();
+
   // Open the DevTools.
   // win.webContents.openDevTools()
 
