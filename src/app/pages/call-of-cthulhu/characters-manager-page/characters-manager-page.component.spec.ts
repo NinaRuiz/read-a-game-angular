@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CreateCharacterFirstPageComponent } from './create-character-first-page.component';
+import { CharactersManagerPageComponent } from './characters-manager-page.component';
 
 describe('CreateCharacterFirstPageComponent', () => {
-  let component: CreateCharacterFirstPageComponent;
-  let fixture: ComponentFixture<CreateCharacterFirstPageComponent>;
+  let component: CharactersManagerPageComponent;
+  let fixture: ComponentFixture<CharactersManagerPageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CreateCharacterFirstPageComponent ]
+      declarations: [ CharactersManagerPageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CreateCharacterFirstPageComponent);
+    fixture = TestBed.createComponent(CharactersManagerPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

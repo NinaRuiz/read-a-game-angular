@@ -10,7 +10,7 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
 import { CallOfCthulhuPageComponent } from './pages/call-of-cthulhu/call-of-cthulhu-page/call-of-cthulhu-page.component';
-import { CreateCharacterFirstPageComponent } from './pages/call-of-cthulhu/create-character-first-page/create-character-first-page.component';
+import { CharactersManagerPageComponent } from './pages/call-of-cthulhu/characters-manager-page/characters-manager-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { CreateCharacterFirstPageComponent } from './pages/call-of-cthulhu/creat
     HomePageComponent,
     NavbarComponent,
     CallOfCthulhuPageComponent,
-    CreateCharacterFirstPageComponent
+    CharactersManagerPageComponent
   ],
   imports: [
     BrowserModule,
