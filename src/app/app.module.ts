@@ -12,6 +12,7 @@ import {MatButtonModule} from "@angular/material/button";
 import { CallOfCthulhuPageComponent } from './pages/call-of-cthulhu/call-of-cthulhu-page/call-of-cthulhu-page.component';
 import { CharactersManagerPageComponent } from './pages/call-of-cthulhu/characters-manager-page/characters-manager-page.component';
 import { FirstPageComponent } from './pages/call-of-cthulhu/create-character/first-page/first-page.component';
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -22,14 +23,15 @@ import { FirstPageComponent } from './pages/call-of-cthulhu/create-character/fir
     CharactersManagerPageComponent,
     FirstPageComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatButtonModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatCardModule,
+        MatButtonModule,
+        MatInputModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
