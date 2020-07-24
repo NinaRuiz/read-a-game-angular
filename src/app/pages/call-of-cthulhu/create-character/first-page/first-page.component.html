@@ -3,11 +3,59 @@
     <h3>La llamada de Cthulhu - Gestionar Personajes - Crear Personaje</h3>
   </mat-card-title>
   <mat-card-content class="center-content">
-    <form>
-      <mat-form-field class="example-full-width">
-        <mat-label>Nombre</mat-label>
+    <p class="input">
+      <mat-form-field>
+        <mat-label>Nombre del personaje</mat-label>
         <input matInput placeholder="Ex. Igor">
       </mat-form-field>
-    </form>
+      <span> | </span>
+      <mat-form-field>
+        <mat-label>Nombre del jugador</mat-label>
+        <input matInput placeholder="Ex. Igor">
+      </mat-form-field>
+      <span> | </span>
+      <mat-form-field class="example-full-width">
+        <input type="text"
+               placeholder="Ocupación"
+               aria-label="Number"
+               matInput
+               [formControl]="myControl"
+               [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let option of options" [value]="option">
+            {{option}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <span> | </span>
+      <mat-form-field>
+        <mat-label>Titulos, licenciaturas</mat-label>
+        <input matInput placeholder="Ex. Igor">
+      </mat-form-field>
+    </p>
+    <p class="input">
+      <mat-form-field>
+        <mat-label>Lugar de nacimiento</mat-label>
+        <input matInput placeholder="Ex. Igor">
+      </mat-form-field>
+      <span> | </span>
+      <mat-form-field>
+        <mat-label>Trastornos mentales</mat-label>
+        <input matInput placeholder="Ex. Igor">
+      </mat-form-field>
+      <span> | </span>
+      <mat-form-field>
+        <mat-label>Sexo</mat-label>
+        <input matInput placeholder="Ex. Igor">
+      </mat-form-field>
+      <span> | </span>
+      <mat-form-field>
+        <mat-label>Edad</mat-label>
+        <input matInput placeholder="Ex. Igor">
+      </mat-form-field>
+    </p>
   </mat-card-content>
+  <mat-card-actions class="btn-right">
+    <button mat-raised-button color="primary" class="next-btn">Next</button>
+  </mat-card-actions>
 </mat-card>
