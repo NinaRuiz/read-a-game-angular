@@ -13,6 +13,7 @@ const routes: Routes = [
   {path: 'call-of-cthulhu/character-manager/create-character-1', component: FirstPageComponent},
   {path: 'call-of-cthulhu/character-manager', component: CharactersManagerPageComponent},
   {path: 'call-of-cthulhu', component: CallOfCthulhuPageComponent},
+  { path: 'call-of-cthulhu', loadChildren: () => import('./call-of-cthulhu-module/call-of-cthulhu-module.module').then(m => m.CallOfCthulhuModuleModule) },
 ];
 
 @NgModule({
