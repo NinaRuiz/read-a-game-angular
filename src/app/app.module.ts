@@ -15,6 +15,7 @@ import { FirstPageComponent } from './pages/call-of-cthulhu/create-character/fir
 import {MatInputModule} from "@angular/material/input";
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatAutocompleteModule} from "@angular/material/autocomplete";
+import { SecondPageComponent } from './pages/call-of-cthulhu/create-character/second-page/second-page.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {MatAutocompleteModule} from "@angular/material/autocomplete";
     NavbarComponent,
     CallOfCthulhuPageComponent,
     CharactersManagerPageComponent,
-    FirstPageComponent
+    FirstPageComponent,
+    SecondPageComponent
   ],
   imports: [
     BrowserModule,
