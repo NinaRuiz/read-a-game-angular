@@ -1,1 +1,36 @@
-<p>second-info-page works!</p>
+<mat-card class="menu mat-elevation-z3">
+  <mat-card-title class="center-text">
+    <h3>La llamada de Cthulhu - Gestionar Personajes - Crear Personaje</h3>
+  </mat-card-title>
+  <mat-card-content >
+    <p>
+    </p>
+    <button mat-raised-button class="btn-margin" color="primary">Re-calcular</button>
+    <div class="table">
+      <mat-divider></mat-divider>
+      <mat-grid-list cols="6" rowHeight="2:1">
+        <mat-grid-tile>FUE</mat-grid-tile>
+        <mat-grid-tile>{{this.FUE}}</mat-grid-tile>
+        <mat-grid-tile>DES</mat-grid-tile>
+        <mat-grid-tile>{{this.DES}}</mat-grid-tile>
+        <mat-grid-tile>INT</mat-grid-tile>
+        <mat-grid-tile>{{this.INT}}</mat-grid-tile>
+        <mat-grid-tile>CON</mat-grid-tile>
+        <mat-grid-tile>{{this.CON}}</mat-grid-tile>
+        <mat-grid-tile>APA</mat-grid-tile>
+        <mat-grid-tile>{{this.APA}}</mat-grid-tile>
+        <mat-grid-tile>POD</mat-grid-tile>
+        <mat-grid-tile>{{this.POD}}</mat-grid-tile>
+        <mat-grid-tile>TAM</mat-grid-tile>
+        <mat-grid-tile>{{this.TAM}}</mat-grid-tile>
+        <mat-grid-tile>COR</mat-grid-tile>
+        <mat-grid-tile>{{this.COR}}</mat-grid-tile>
+        <mat-grid-tile>EDU</mat-grid-tile>
+        <mat-grid-tile>{{this.EDU}}</mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </mat-card-content>
+  <mat-card-actions class="btn-right">
+    <button mat-raised-button color="primary" class="next-btn" routerLink="../create-character-two">Next</button>
+  </mat-card-actions>
+</mat-card>

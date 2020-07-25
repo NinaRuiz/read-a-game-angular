@@ -12,6 +12,9 @@ import {MatOptionModule} from "@angular/material/core";
 import {MatAutocompleteModule} from "@angular/material/autocomplete";
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
+import {MatTableModule} from "@angular/material/table";
+import {MatDividerModule} from "@angular/material/divider";
+import {MatGridListModule} from "@angular/material/grid-list";
 
 
 @NgModule({
@@ -30,6 +33,9 @@ import {MatInputModule} from "@angular/material/input";
     MatAutocompleteModule,
     ReactiveFormsModule,
     MatInputModule,
+    MatTableModule,
+    MatDividerModule,
+    MatGridListModule,
   ]
 })
 export class CharactersManagerModuleModule { }
