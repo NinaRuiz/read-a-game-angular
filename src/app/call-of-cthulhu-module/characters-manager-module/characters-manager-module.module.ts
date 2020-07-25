@@ -16,6 +16,13 @@ import {MatTableModule} from "@angular/material/table";
 import {MatDividerModule} from "@angular/material/divider";
 import {MatGridListModule} from "@angular/material/grid-list";
 import { ThirdPageComponent } from './create-character/third-page/third-page.component';
+import { FourthPageComponent } from './create-character/fourth-page/fourth-page.component';
+import { FifthPageComponent } from './create-character/fifth-page/fifth-page.component';
+import { SixthPageComponent } from './create-character/sixth-page/sixth-page.component';
+import { SeventhPageComponent } from './create-character/seventh-page/seventh-page.component';
+import { EighthPageComponent } from './create-character/eighth-page/eighth-page.component';
+import { NinethPageComponent } from './create-character/nineth-page/nineth-page.component';
+import { TenthPageComponent } from './create-character/tenth-page/tenth-page.component';
 
 
 @NgModule({
@@ -23,7 +30,14 @@ import { ThirdPageComponent } from './create-character/third-page/third-page.com
     CharactersManagerModuleComponent,
     FirstPageComponent,
     SecondInfoPageComponent,
-    ThirdPageComponent
+    ThirdPageComponent,
+    FourthPageComponent,
+    FifthPageComponent,
+    SixthPageComponent,
+    SeventhPageComponent,
+    EighthPageComponent,
+    NinethPageComponent,
+    TenthPageComponent
   ],
   imports: [
     CommonModule,
