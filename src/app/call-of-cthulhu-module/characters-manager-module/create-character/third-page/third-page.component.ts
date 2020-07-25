@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThirdPageComponent implements OnInit {
 
+  public idea: number;
+  public luck: number;
+  public knowledge: number;
+  public miths: number;
+  public damage_bonus: number;
+  public magic: number;
+  public sanity: number;
+
   constructor() { }
 
   ngOnInit() {
