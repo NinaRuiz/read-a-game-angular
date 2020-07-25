@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CallOfCthulhuPageComponent } from './call-of-cthulhu-page.component';
+import { SecondInfoPageComponent } from './second-info-page.component';
 
-describe('CallOfCthulhuPageComponent', () => {
-  let component: CallOfCthulhuPageComponent;
-  let fixture: ComponentFixture<CallOfCthulhuPageComponent>;
+describe('SecondInfoPageComponent', () => {
+  let component: SecondInfoPageComponent;
+  let fixture: ComponentFixture<SecondInfoPageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CallOfCthulhuPageComponent ]
+      declarations: [ SecondInfoPageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CallOfCthulhuPageComponent);
+    fixture = TestBed.createComponent(SecondInfoPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
