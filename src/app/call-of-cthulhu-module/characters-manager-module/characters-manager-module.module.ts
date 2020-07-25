@@ -15,13 +15,15 @@ import {MatInputModule} from "@angular/material/input";
 import {MatTableModule} from "@angular/material/table";
 import {MatDividerModule} from "@angular/material/divider";
 import {MatGridListModule} from "@angular/material/grid-list";
+import { ThirdPageComponent } from './create-character/third-page/third-page.component';
 
 
 @NgModule({
   declarations: [
     CharactersManagerModuleComponent,
     FirstPageComponent,
-    SecondInfoPageComponent
+    SecondInfoPageComponent,
+    ThirdPageComponent
   ],
   imports: [
     CommonModule,
