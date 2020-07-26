@@ -24,6 +24,7 @@ import { EighthPageComponent } from './create-character/eighth-page/eighth-page.
 import { NinethPageComponent } from './create-character/nineth-page/nineth-page.component';
 import { TenthPageComponent } from './create-character/tenth-page/tenth-page.component';
 import {MatSelectModule} from "@angular/material/select";
+import {MatExpansionModule} from "@angular/material/expansion";
 
 
 @NgModule({
@@ -40,20 +41,21 @@ import {MatSelectModule} from "@angular/material/select";
     NinethPageComponent,
     TenthPageComponent
   ],
-    imports: [
-        CommonModule,
-        CharactersManagerModuleRoutingModule,
-        MatCardModule,
-        MatButtonModule,
-        MatFormFieldModule,
-        MatOptionModule,
-        MatAutocompleteModule,
-        ReactiveFormsModule,
-        MatInputModule,
-        MatTableModule,
-        MatDividerModule,
-        MatGridListModule,
-        MatSelectModule,
-    ]
+  imports: [
+    CommonModule,
+    CharactersManagerModuleRoutingModule,
+    MatCardModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatOptionModule,
+    MatAutocompleteModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatTableModule,
+    MatDividerModule,
+    MatGridListModule,
+    MatSelectModule,
+    MatExpansionModule,
+  ]
 })
 export class CharactersManagerModuleModule { }

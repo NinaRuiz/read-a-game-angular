@@ -1,1 +1,122 @@
-<p>nineth-page works!</p>
+<mat-card class="menu mat-elevation-z3">
+  <mat-card-title class="center-content">
+    <h3>La llamada de Cthulhu - Gestionar Personajes - Crear Personaje</h3>
+  </mat-card-title>
+  <mat-card-content class="center-content">
+    <p>
+      Vamos a ver como queda nuestro personaje. Si te parece correcto guarda el personaje. Si quieres cambiar algo, dale
+    al boton de cambiar de cada sección y volveras a la pagina del apartado elegido.
+    </p>
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Información básica
+          </mat-panel-title>
+          <mat-panel-description>
+            Nombre, titulo, ocupacion, etc.
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>
+          Nombre del jugador: <br>
+          Nombre del personaje: <br>
+          Titulos, licenciaturas: <br>
+          Ocupación: <br>
+          Lugar de nacimiento: <br>
+          Trastornos mentales: <br>
+          Sexo: <br>
+          Edad: <br>
+        </p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Características
+          </mat-panel-title>
+          <mat-panel-description>
+            FUE, DES, INT, CON, etc.
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>
+          <mat-grid-list cols="6" rowHeight="2:1">
+            <mat-grid-tile>FUE</mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile>DES</mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile>INT</mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile>CON</mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile>APA</mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile>POD</mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile>TAM</mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile>COR</mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile>EDU</mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+          </mat-grid-list>
+        </p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Otras características
+          </mat-panel-title>
+          <mat-panel-description>
+            Idea, suerte, conocimiento, etc.
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>
+          Idea: <br>
+          Suerte: <br>
+          Conocimiento: <br>
+          99 - Mitos de cthulhu: <br>
+          Bonificación de daño: <br>
+          Puntos de magia: <br>
+          Puntos de vida: <br>
+        </p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Habilidades
+          </mat-panel-title>
+          <mat-panel-description>
+            Buscar, lenguas, etc.
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <ol>
+          <li>
+
+          </li>
+        </ol>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Ingresos
+          </mat-panel-title>
+          <mat-panel-description>
+            Dinero entrante y ahorros
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>
+          Tus ingresos anuales: <br>
+          Tus ahorros: <br>
+        </p>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <button mat-raised-button color="primary" routerLink="../create-character-nine">Guardar</button>
+  </mat-card-content>
+  <mat-card-actions class="btn-right">
+    <button mat-raised-button color="primary" class="next-btn" routerLink="../create-character-ten">Next</button>
+  </mat-card-actions>
+</mat-card>

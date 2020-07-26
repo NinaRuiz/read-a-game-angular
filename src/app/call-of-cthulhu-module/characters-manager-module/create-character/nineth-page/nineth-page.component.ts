@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NinethPageComponent implements OnInit {
 
+  panelOpenState = false;
+
   constructor() { }
 
   ngOnInit() {
