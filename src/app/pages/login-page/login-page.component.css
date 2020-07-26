@@ -3,7 +3,8 @@
 }
 
 .center-text{
-  text-align: center;
+  position: inherit;
+  left: 5px;
 }
 
 .menu-button{
@@ -14,3 +15,28 @@
 .center-content{
   text-align: center;
 }
+
+.btn-right{
+  text-align: right;
+}
+
+.next-btn{
+  margin: 15px;
+}
+
+.table{
+  max-width: 400px;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.table-cell{
+  text-align: left;
+}
+
+.btn-margin{
+  margin: 10px;
+}
+
+
