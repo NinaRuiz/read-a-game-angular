@@ -12,12 +12,18 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatInputModule} from "@angular/material/input";
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatAutocompleteModule} from "@angular/material/autocomplete";
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { RegisterPageComponent } from './pages/register-page/register-page.component';
+import { AboutThisPageComponent } from './pages/about-this-page/about-this-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     NavbarComponent,
+    LoginPageComponent,
+    RegisterPageComponent,
+    AboutThisPageComponent,
   ],
   imports: [
     BrowserModule,
