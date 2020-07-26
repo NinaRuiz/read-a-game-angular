@@ -1,1 +1,26 @@
-<p>fifth-page works!</p>
+<mat-card class="menu mat-elevation-z3">
+  <mat-card-title class="center-content">
+    <h3>La llamada de Cthulhu - Gestionar Personajes - Crear Personaje</h3>
+  </mat-card-title>
+  <mat-card-content class="center-content">
+    <p>
+      En cuanto a la profession que elegir es importante tener en cuenta las habilidades que queremos tener. Cada
+      profession tiene sus habilidades correspondientes.<br>
+      Selecciona la profession y abajo apareceran las habilidades que optendras con cada una. Cuando hayas elegido
+      simplemente ¡guardala!
+    </p>
+    <mat-form-field appearance="fill">
+      <mat-label>Elegir</mat-label>
+      <mat-select>
+        <mat-option value="option" *ngFor="let profession of professions">{{profession}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <ol hidden>
+      <li></li>
+    </ol>
+  </mat-card-content>
+  <mat-card-actions class="btn-right">
+    <button mat-raised-button color="primary" class="next-btn" routerLink="../create-character-six">Next</button>
+  </mat-card-actions>
+</mat-card>
+
