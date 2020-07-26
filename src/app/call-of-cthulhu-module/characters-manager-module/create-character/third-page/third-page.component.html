@@ -2,24 +2,54 @@
   <mat-card-title class="center-text">
     <h3>La llamada de Cthulhu - Gestionar Personajes - Crear Personaje</h3>
   </mat-card-title>
-  <mat-divider></mat-divider>
   <mat-card-content class="center-content">
-    <mat-grid-list cols="2" rowHeight="2:1">
-      <mat-grid-tile>Idea</mat-grid-tile>
-      <mat-grid-tile>{{this.idea}}</mat-grid-tile>
-      <mat-grid-tile>Suerte</mat-grid-tile>
-      <mat-grid-tile>{{this.luck}}</mat-grid-tile>
-      <mat-grid-tile>Conocimiento</mat-grid-tile>
-      <mat-grid-tile>{{this.knowledge}}</mat-grid-tile>
-      <mat-grit-tile>99-Mitos de Cthulhu</mat-grit-tile>
-      <mat-grid-tile>{{this.miths}}</mat-grid-tile>
-      <mat-grid-tile>Bonificación de daño</mat-grid-tile>
-      <mat-grid-tile>{{this.damage_bonus}}</mat-grid-tile>
-      <mat-grid-tile>Puntos de magia</mat-grid-tile>
-      <mat-grid-tile>{{this.magic}}</mat-grid-tile>
-      <mat-grid-tile>Puntos de vida</mat-grid-tile>
-      <mat-grid-tile>{{this.sanity}}</mat-grid-tile>
-    </mat-grid-list>
+    <div class="table">
+      <mat-divider></mat-divider>
+      <mat-grid-list cols="2" rowHeight="20px">
+        <mat-grid-tile>
+          <div class="center-text">Idea</div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="center-text">{{this.idea}}</div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="center-text">Suerte</div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="center-text">{{this.luck}}</div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="center-text">Conocimiento</div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="center-text">{{this.knowledge}}</div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="center-text">99-Mitos de Cthulhu</div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="center-text">{{this.miths}}</div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="center-text">Bonificación de daño</div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="center-text">{{this.damage_bonus}}</div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="center-text">Puntos de magia</div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="center-text">{{this.magic}}</div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="center-text">Puntos de vida</div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="center-text">{{this.sanity}}</div>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
   </mat-card-content>
   <mat-card-actions class="btn-right">
     <button mat-raised-button color="primary" class="next-btn" routerLink="../create-character-two">Next</button>
