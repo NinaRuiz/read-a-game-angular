@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SixthPageComponent implements OnInit {
 
+  public points: number = 200;
+
   constructor() { }
 
   ngOnInit() {

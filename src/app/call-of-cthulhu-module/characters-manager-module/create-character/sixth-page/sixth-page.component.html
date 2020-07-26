@@ -1,1 +1,22 @@
-<p>sixth-page works!</p>
+<mat-card class="menu mat-elevation-z3">
+  <mat-card-title class="center-content">
+    <h3>La llamada de Cthulhu - Gestionar Personajes - Crear Personaje</h3>
+  </mat-card-title>
+  <mat-card-content class="center-content">
+    <p>
+      La habilidades es algo importante puesto que nos ayudaran durante nuestras aventuras.
+      Estas son las habilidades que has elegido por tu profession. Tienes {{this.points}} para repartir entre las
+      habilidades escogidas.
+    </p>
+    <ol hidden>
+      <li>
+        <!-- ability + % + input -->
+      </li>
+    </ol>
+  </mat-card-content>
+  <mat-card-actions class="btn-right">
+    <button mat-raised-button color="primary" class="next-btn" routerLink="../create-character-seven">Next</button>
+  </mat-card-actions>
+</mat-card>
+
+
