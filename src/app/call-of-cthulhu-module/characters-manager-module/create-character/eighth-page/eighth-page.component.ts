@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EighthPageComponent implements OnInit {
 
+  public annualIncome = 10000;
+  public savings = 3000;
+
   constructor() { }
 
   ngOnInit() {
