@@ -1,1 +1,30 @@
-<p>fourth-page works!</p>
+<mat-card class="menu mat-elevation-z3">
+  <mat-card-title class="center-content">
+    <h3>La llamada de Cthulhu - Gestionar Personajes - Crear Personaje</h3>
+  </mat-card-title>
+  <mat-card-content class="center-content">
+    <p>
+      Es hora de decidir quién será el más sabio y quién el más adorable, en otras palabras,
+      a saber que tan cerca estamos de la muerte.
+      La edad base parte de nuestra educación (EDU). En tu caso seria {{this.outputAge}}
+      pero si quieres puedes añadir más años.
+      ¿Quieres? ¿Cuantos?
+    </p>
+    <mat-form-field appearance="fill">
+      <mat-label>Añadir años: </mat-label>
+      <input matInput type="number" placeholder="0">
+      <mat-hint>Recuerda que la edad puede afectar a tus atributos.</mat-hint>
+    </mat-form-field>
+    <button mat-raised-button color="primary">Añadir</button>
+    <div [hidden]="hideFinalAge">
+      <p>
+        La edad final por lo tanto serà {{this.finalAge}}. ¿Estas de acuerdo? Si no estas de acuerdo, simplemente vuelve
+        a cambiar la edad añadida y añadela. Cuando estes conforme guarda la edad elegida.
+      </p>
+      <button mat-raised-button color="primary">Guardar</button>
+    </div>
+  </mat-card-content>
+  <mat-card-actions class="btn-right">
+    <button mat-raised-button color="primary" class="next-btn" routerLink="../create-character-five">Next</button>
+  </mat-card-actions>
+</mat-card>
