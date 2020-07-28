@@ -10,11 +10,13 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
 import {MatInputModule} from "@angular/material/input";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatAutocompleteModule} from "@angular/material/autocomplete";
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
 import { AboutThisPageComponent } from './pages/about-this-page/about-this-page.component';
+import { ProfilesService } from "./services/profiles.service";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -34,9 +36,11 @@ import { AboutThisPageComponent } from './pages/about-this-page/about-this-page.
     MatButtonModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ProfilesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
